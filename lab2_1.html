@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="form-echo.php" method="get">
+            <p><label>1 ชื่อเต็ม/ย่อของสาขาวิชา<br>
+            <select name="dept">
+                <option value="" style="text-align:center;">--Please choose an option--</option>
+                <option value="AS">สาขาวิชาสถิติประยุกต์(AS)</option>
+                <option value="ASB">สาขาวิชาสถิติธุรกิจและการประกันภัย(ASB)</option>
+                <option value="AT">สาขาวิชาเทคโนโลยีอุตสาหกรรมเกษตร(AT)</option>
+                <option value="BME">สาขาวิชาวิศวกรรมชีวการแพทย์(BME)</option>
+                <option value="BT">สาขาวิชาเทคโนโลยีชีวภาพ(BT)</option>
+                <option value="CS">สาขาวิชาวิทยาการคอมพิวเตอร์(CS)</option>
+                <option value="IC">สาขาวิชาเคมีอุตสาหกรรม(IC)</option>
+                <option value="IMI">สาขาวิชาฟิสิกส์อุตสาหกรรมและอุปกรณ์การแพทย์(IMI)</option>
+                <option value="MA">สาขาวิชาคณิตศาสตร์ประยุกต์(MA)</option>
+                <option value="MC">สาขาวิชาคณิตศาสตร์เชิงวิทยาการคอมพิวเตอร์(MC)</option>
+                <option value="SIT">สาขาวิชานวัตกรรมและเทคโนโลยีความมั่นคง(SIT)</option>
+            </select></label></p>
+            <p><label>2 จำนวนเงินที่จะโอน<br>
+            <input
+                pattern="[1-9]\d+(.)\d{2,2}"
+                type="text"
+                name="money"
+                placeholder="ลงท้าย .XX บาท"></label></p>
+            <p><label>3 อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย<br>
+            <input type="text" name="favfood1" placeholder="อันดับที่ 1"><br>
+            <input type="text" name="favfood2" placeholder="อันดับที่ 2"><br>
+            <input type="text" name="favfood3" placeholder="อันดับที่ 3"><br>
+            <input type="text" name="favfood4" placeholder="อันดับที่ 4"><br>
+            <input type="text" name="favfood5" placeholder="อันดับที่ 5"><br>
+            </label></p>
+            <p><label>4 ค่าไฟฟ้า 3 เดือนที่ผ่านมา<br>
+            <input
+                pattern="[1-9]\d+(.)\d{2,2}"
+                type="text"
+                name="bill"
+                placeholder="ลงท้าย .XX บาท"></label></p>
+            <p><label>5 รหัสบัตรประชาชน<br>
+            <input
+                pattern="[1-9]\d{12,12}"
+                type="text"
+                name="ID"></label></p>
+            <p><label>6 ความพึงพอใจของหนังสือเล่มนี้<br>
+            <input type="radio" name="book" value="excellent">มากที่สุด<br>
+            <input type="radio" name="book" value="very good">มาก<br>
+            <input type="radio" name="book" value="good">ปลานกลาง<br>
+            <input type="radio" name="book" value="fair">น้อย<br>
+            <input type="radio" name="book" value="poor">น้อยที่สุด</label></p>
+            <p><label>7 อาการป่วย <br>
+            <input type="checkbox" name="sickness" value="fever">มีไข้<br>
+            <input type="checkbox" name="sickness" value="cough">ไอ<br>
+            <input type="checkbox" name="sickness" value="runny_nose">มีน้ำมูก<br>
+            <input type="checkbox" name="sickness" value="sore_throat">เจ็บคอ<br>
+            <input type="checkbox" name="sickness" value="headache">ปวดหัว<br>
+            <input type="checkbox" name="sickness" value="vomit">อาเจียน<br>
+            <input type="checkbox" name="sickness" value="nauseous">คลื่นไส้<br>
+            <input type="checkbox" name="sickness" value="stomachache">ปวดท้อง<br>
+            </label></p>
+            <p><label>8 ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่<br>
+            <input type="radio" name="vaccine" value="Yes">เคย<br>
+            <input type="radio" name="vaccine" value="No">ไม่เคย</label></p>
+            <p><label>9 รหัสผ่าน<br>
+            <input type="password" name="Password"></label></p>
+            <p><label>10 เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน<br>
+            <input type="time" name="Starttime"> -
+            <input type="time" name="Endtime"></label></p>
+            <p><label>11 วันเวลาที่ต้องไปพบแพทย์<br>
+            <input type="datetime-local" name="DateTime"></label></p>
+        </p> <input type="submit" value="Submit">
+        </form><br>
+    </body>
+</html>
